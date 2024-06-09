@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+.roulette {
+    position: absolute;
+    top:-250px;
+    left: -50px;
+}
+.arrow {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 230px;
+    height: 40px;
+    width: 40px;
+    z-index: 20;
+    background-size: contain;
+    background-image: url("/public/arrow.png");
+}
+#spin {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    top: calc(50% - 40px);
+    z-index: 10;
+    left: calc(50% - 40px);
+    outline: none;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 10px solid ghostwhite;
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+}
+.container > div {
+    height: 50%;
+    width: 200px;
+    position: absolute;
+    clip-path: polygon(100% 0,50% 100%, 0 0);
+    transform-origin: bottom;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+    left: 140px;
+    writing-mode: vertical-lr;
+}
+.container > div > span {
+    transform: rotate(180deg);
+}
+.one{
+    background-color: rgb(12, 159, 245);
+    left: 50%;
+}
+.two{
+    background-color: rgb(142, 208, 247);
+    transform: rotate(45deg);
+}
+.three{
+    background-color: rgb(12, 159, 245);
+    transform: rotate(90deg);
+}
+.four{
+    background-color: rgb(142, 208, 247);
+    transform: rotate(135deg);
+}
+.five{
+    background-color: rgb(12, 159, 245);
+    transform: rotate(180deg);
+}
+.six{
+    background-color: rgb(142, 208, 247);
+    transform: rotate(225deg);
+}
+.seven{
+    background-color: rgb(12, 159, 245);
+    transform: rotate(270deg);
+}
+.eight{
+    background-color: rgb(142, 208, 247);
+    transform: rotate(315deg);
+}
+.box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: white;
+    overflow: hidden;
+}.title {
+font-size: 28px;
+margin-bottom: 18px;
+}
+.subTitle {
+    font-size: 18px;
+}
+.input {
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: rgb(235, 232, 232);
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    background: rgb(12, 159, 245);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.footer{
+    font-size: 9px;
+    margin-top: 5px;
+}
