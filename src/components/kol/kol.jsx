@@ -1,24 +1,28 @@
 import './kol.css';
-
+import{ useRef } from 'react';
 
 
 export const Koleso = () => {
+    const containerRef = useRef(null);
 
-    let container = document.querySelector('.container')
+   
     // let btn = document.getElementById('spin')
     let number = Math.ceil(Math.random()*1000)
     
 const Rotate = () => {
-    container.style.transform = "rotate(" + number + "deg)"
-    number += Math.ceil(Math.random()*1000)
+    if (containerRef.current) {
+        containerRef.current.style.transform = "rotate(" + number + "deg)";
+        number += Math.ceil(Math.random()*1000)
+    }
+
 }
 
   return (
    <div className="box">
     <div className="arrow"></div>
         <div className="roulette">
-            <div className="container">
-                <span id='spin'></span>
+            <div className="container" ref={containerRef}>
+                <button id='spin'></button>
                 <div className="one"><span>Скидка</span></div>
                 <div className="two"><span>Скидка</span></div>
                 <div className="three"><span>Скидка</span></div>
