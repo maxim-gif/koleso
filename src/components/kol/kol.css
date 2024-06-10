@@ -52,6 +52,7 @@
     color: #fff;
     left: 140px;
     writing-mode: vertical-lr;
+    padding-bottom: 30px;
 }
 .container > div > span {
     transform: rotate(180deg);
