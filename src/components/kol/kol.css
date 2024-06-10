@@ -55,37 +55,38 @@
 }
 .container > div > span {
     transform: rotate(180deg);
+    font-size: 10px;
 }
 .one{
-    background-color: rgb(12, 159, 245);
+    background-color: #FF9933;
     left: 50%;
 }
 .two{
-    background-color: rgb(142, 208, 247);
+    background-color: #009999;
     transform: rotate(45deg);
 }
 .three{
-    background-color: rgb(12, 159, 245);
+    background-color: #FF9933;
     transform: rotate(90deg);
 }
 .four{
-    background-color: rgb(142, 208, 247);
+    background-color: #009999;
     transform: rotate(135deg);
 }
 .five{
-    background-color: rgb(12, 159, 245);
+    background-color: #FF9933;
     transform: rotate(180deg);
 }
 .six{
-    background-color: rgb(142, 208, 247);
+    background-color: #009999;
     transform: rotate(225deg);
 }
 .seven{
-    background-color: rgb(12, 159, 245);
+    background-color: #FF9933;
     transform: rotate(270deg);
 }
 .eight{
-    background-color: rgb(142, 208, 247);
+    background-color: #009999;
     transform: rotate(315deg);
 }
 .box {
