@@ -28,7 +28,7 @@ const Rotate = () => {
                 <div className="three"><span>Бесплатная доставка</span></div>
                 <div className="four"><span>В этот раз не повезло</span></div>
                 <div className="five"><span>Скидка 3%</span></div>
-                <div className="six"><span>Мультифункциональное <br />стекло в подарок</span></div>
+                <div className="six"><span>Мультистекло в подарок</span></div>
                 <div className="seven"><span>Скидка 2%</span></div>
                 <div className="eight"><span>Гребенка для окна в подарок</span></div>
             </div>
